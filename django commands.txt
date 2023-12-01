@@ -1,0 +1,6 @@
+workon myapp -> starts virtual environment
+python manage.py runserver -> starts the server
+python manage.py startapp myapp -> create django app
+mongo password = eMfNLR02bJyUr9bc
+mongo username = 7amota04
+mongo uri = mongodb+srv://7amota04:eMfNLR02bJyUr9bc@cluster0.bgxx4tr.mongodb.net/?retryWrites=true&w=majority
