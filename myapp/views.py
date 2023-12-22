@@ -49,7 +49,7 @@ def get_user(request):
 
 #local URI = mongodb://localhost:27017/
 #mongodb+srv://7amota04:eMfNLR02bJyUr9bc@cluster0.bgxx4tr.mongodb.net/
-client = MongoClient('mongodb+srv://7amota04:eMfNLR02bJyUr9bc@cluster0.bgxx4tr.mongodb.net/')
+client = MongoClient('mongodb+srv://youssufeltahan:jUlQVhINihPSM2dC@cluster0.ckz9p10.mongodb.net/')
 db = client['clinic']
 print("bolbol")
 
