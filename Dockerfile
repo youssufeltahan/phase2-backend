@@ -4,6 +4,7 @@ WORKDIR /toolsDocker
 
 COPY requiremnts.txt .
 RUN pip install -r requiremnts.txt
+RUN pip3 install python-dotenv
 
 ENV PYTHONDONTWRITEBYTECODE=1
 ENV PYTHONUNBUFFERED=1
