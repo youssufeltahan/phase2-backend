@@ -9,7 +9,10 @@ from datetime import datetime, timedelta
 import jwt
 from django.conf import settings
 from django.contrib.auth.models import User
-
+from dotenv import load_dotenv
+import os
+load_dotenv()  # This line brings all environment variables from .env into os.environ
+#print(os.environ['port'])
 
 def generate_jwt_token(user):
     payload = {
@@ -49,9 +52,14 @@ def get_user(request):
 
 #local URI = mongodb://localhost:27017/
 #mongodb+srv://7amota04:eMfNLR02bJyUr9bc@cluster0.bgxx4tr.mongodb.net/
-client = MongoClient('mongodb+srv://youssufeltahan:jUlQVhINihPSM2dC@cluster0.ckz9p10.mongodb.net/')
+url='mongodb+srv://AmrMahmoud:amr.mahmoud@cluster0.exwcjr4.mongodb.net/?retryWrites=true&w=majority'
+#url = os.environ.get('db_port')
+
+client = MongoClient(url)
 db = client['clinic']
+
 print("bolbol")
+print(os.environ.get('db_port'))
 
 @api_view(['POST'])
 def signUp(request):
